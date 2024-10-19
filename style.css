@@ -1,0 +1,354 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #172237;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+select,
+input[type="date"] {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.source {
+    position: absolute;
+    background-color: #0f0501;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white;
+    top: 10px;
+    left: 10px;
+    font-size: small;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 200px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    select {
+        width: 120px;
+    }
+
+    .card {
+        width: 90%;
+    }
+} */
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #172237;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    padding-right: 40px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+input:hover {
+    background-color: #e0e0e0;
+    width: 320px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+    color: #172237;
+}
+
+select,
+input[type="date"] {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+select:hover,
+input[type="date"]:hover {
+    background-color: #e0e0e0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.source {
+    position: absolute;
+    background-color: #0f0501;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white;
+    top: 10px;
+    left: 10px;
+    font-size: small;
+    transition: background-color 0.3s ease;
+}
+
+.source:hover {
+    background-color: #e63946;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #172237;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #e63946;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+    input {
+        width: 250px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 200px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    select,
+    input[type="date"] {
+        width: 120px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        width: 150px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+}

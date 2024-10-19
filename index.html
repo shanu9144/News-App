@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+<body>
+    <header>
+        <h1>🔥Global News App²</h1>
+        <form class="search-form">
+            <div class="input-container">
+                <input id="search-input" type="text" placeholder="Search News Here...">
+                <span class="material-symbols-outlined search-icon" onclick="loadNews()">search</span>
+            </div>
+
+            <!-- Language Filter -->
+            <select id="language" name="language">
+                <option value="">All Languages</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+
+            <!-- Search In Filter -->
+            <select id="searchIn" name="searchIn">
+                <option value="">Search In: All</option>
+                <option value="title">Title</option>
+                <option value="description">Description</option>
+                <option value="content">Content</option>
+            </select>
+
+            <!-- Sort By Filter
+            <select id="sortBy" name="sortBy">
+                <option value="publishedAt">Newest</option>
+                <option value="popularity">Popularity</option>
+                <option value="relevancy">Relevancy</option>
+            </select> -->
+
+            <!-- Date Range Filter -->
+            <input type="date" id="from" name="from">
+            <input type="date" id="to" name="to">
+        </form>
+    </header>
+
+    <main id="news-container"></main>
+
+    <script src="app.js"></script>
+    <script src="color.js"></script>
+</body>
+</html>
